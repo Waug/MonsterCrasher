@@ -156,6 +156,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &63261693
 BoxCollider:
@@ -254,6 +257,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &89517750
 BoxCollider:
@@ -352,6 +358,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &129919550
 BoxCollider:
@@ -450,6 +459,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &140878312
 BoxCollider:
@@ -548,6 +560,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &222457471
 BoxCollider:
@@ -646,6 +661,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &240011541
 BoxCollider:
@@ -744,6 +762,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &312985037
 BoxCollider:
@@ -842,6 +863,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &351131710
 BoxCollider:
@@ -940,6 +964,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &362144277
 BoxCollider:
@@ -1038,6 +1065,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &386055783
 BoxCollider:
@@ -1136,6 +1166,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &404910377
 BoxCollider:
@@ -1234,6 +1267,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &411696937
 BoxCollider:
@@ -1332,6 +1368,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &430059995
 BoxCollider:
@@ -1430,6 +1469,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &490304518
 BoxCollider:
@@ -1528,6 +1570,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &490911815
 BoxCollider:
@@ -1626,6 +1671,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &500372282
 BoxCollider:
@@ -1724,6 +1772,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &522219386
 BoxCollider:
@@ -1914,6 +1965,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &533588282
 BoxCollider:
@@ -2012,6 +2066,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &549853072
 BoxCollider:
@@ -2156,6 +2213,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &596227598
 BoxCollider:
@@ -2254,6 +2314,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &596423785
 BoxCollider:
@@ -2352,6 +2415,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &609849130
 BoxCollider:
@@ -2450,6 +2516,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &631640714
 BoxCollider:
@@ -2548,6 +2617,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &670911631
 BoxCollider:
@@ -2646,6 +2718,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &672017332
 BoxCollider:
@@ -2744,6 +2819,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &679111066
 BoxCollider:
@@ -2842,6 +2920,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &701694613
 BoxCollider:
@@ -2940,6 +3021,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &721529786
 BoxCollider:
@@ -3038,6 +3122,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &745683327
 BoxCollider:
@@ -3136,6 +3223,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &769501193
 BoxCollider:
@@ -3234,6 +3324,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &823315238
 BoxCollider:
@@ -3332,6 +3425,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &837944325
 BoxCollider:
@@ -3430,6 +3526,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &884863907
 BoxCollider:
@@ -3528,6 +3627,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &886937661
 BoxCollider:
@@ -3626,6 +3728,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &952951910
 BoxCollider:
@@ -3724,6 +3829,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &959844395
 BoxCollider:
@@ -3822,6 +3930,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &1005751186
 BoxCollider:
@@ -3997,6 +4108,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &1081509562
 BoxCollider:
@@ -4095,6 +4209,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &1101315971
 BoxCollider:
@@ -4193,6 +4310,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &1117925324
 BoxCollider:
@@ -4291,6 +4411,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &1233422418
 BoxCollider:
@@ -4389,6 +4512,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 1
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &1374472285
 BoxCollider:
@@ -4487,6 +4613,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &1385816838
 BoxCollider:
@@ -4585,6 +4714,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &1391610631
 BoxCollider:
@@ -4683,6 +4815,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &1404328437
 BoxCollider:
@@ -4781,6 +4916,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &1446623211
 BoxCollider:
@@ -4879,6 +5017,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &1470840464
 BoxCollider:
@@ -4977,6 +5118,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 8
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &1519016263
 BoxCollider:
@@ -5075,6 +5219,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &1540414537
 BoxCollider:
@@ -5173,6 +5320,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &1550808603
 BoxCollider:
@@ -5271,6 +5421,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &1575254564
 BoxCollider:
@@ -5369,6 +5522,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 1
+  NOTATIONTEST: 1
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &1575675893
 BoxCollider:
@@ -5467,6 +5623,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &1761421154
 BoxCollider:
@@ -5565,6 +5724,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &1789301311
 BoxCollider:
@@ -5663,6 +5825,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &1827620138
 BoxCollider:
@@ -5761,6 +5926,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &1840869865
 BoxCollider:
@@ -5859,6 +6027,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &1859979229
 BoxCollider:
@@ -5957,6 +6128,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &1883926989
 BoxCollider:
@@ -6055,6 +6229,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &1902814591
 BoxCollider:
@@ -6153,6 +6330,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &1989118101
 BoxCollider:
@@ -6251,6 +6431,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &2009759498
 BoxCollider:
@@ -6415,6 +6598,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 0
 --- !u!65 &2083851019
 BoxCollider:
@@ -6513,6 +6699,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &2102623169
 BoxCollider:
@@ -6611,6 +6800,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SQUARETEST: 0
+  NOTATIONTEST: 0
+  ORITEST: 0
   SpaceType: 1
 --- !u!65 &2126104409
 BoxCollider:
