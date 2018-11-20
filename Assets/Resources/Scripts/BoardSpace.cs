@@ -13,7 +13,7 @@ public class BoardSpace : MonoBehaviour {
 
 	private string[] boardLetters 				= 	{"AA", "A", "B", "C", "D", "E", "F", "G", "H", "HH"};
 	private int[] boardNumbers 					= 	{0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-	private int[] targetCoordinateAdjustment 	= new int[2];
+	private int[] vectorIndex 	= new int[2];
 	private int[,] orientationIndex			 	= new int[,] {{-1,-1}, {0,1}, {1,-1}, {-1,0}, {1,1}, {0,-1}, {-1,1}, {1,0}};
 	//{  	
 //								new int[,] 	{{-1,-1}, {0,1}, {1,-1}, {-1,0}, {1,1}, {0,-1}, {-1,1}, {1,0}},
@@ -22,8 +22,9 @@ public class BoardSpace : MonoBehaviour {
 
 	private int orientationOffset;
 
-	private int homeLetterIndex;
-	private int homeNumberIndex;
+	private int[] homeIndex		= new int[2];
+	private int[] cursorIndex	= new int[2];
+
 	private int x;
 	private int z;
 
@@ -37,82 +38,75 @@ public class BoardSpace : MonoBehaviour {
 	void Start () {
 		pointerSpace = gameObject.name;
 		//Set coordinates for array indexes
-		parseBoardIndex (pointerSpace, true);
+		indexSpace (pointerSpace).CopyTo(homeIndex, 0);
+
+
+		if (SQUARETEST)
+			findSpaces(Movement.MOVEMENTS_AVAILABLE.KNIGHTRIGHT, Monster.MonsterOrientation.North);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		if (SQUARETEST)
-			parseNotation(NOTATIONTEST, ORITEST);
+
 		
 	}
 
-	public string findSpace(Movement.MOVEMENTS_AVAILABLE direction, Monster.MonsterOrientation orientation) {
-		Movement.MOVEMENT_NOTATION[] moveNotation = Movement.findMove(direction);
+	//Direction is put in as the move
+	public string[] findSpaces(Movement.MOVEMENTS_AVAILABLE direction, Monster.MonsterOrientation orientation) {
+		Movement.MOVEMENT_NOTATION[] moveNotation = Movement.findMoves(direction);
+
+		Debug.Log (gameObject.name + ": ");
 
 		string[] moveOrder = new string[moveNotation.Length];
+		int[] indexOrder = new int[moveNotation.Length];
 		int i = 0;
-		foreach (Movement.MOVEMENT_NOTATION note in moveNotation) {
-			moveOrder[i] = parseNotation(note, orientation);
+		homeIndex.CopyTo (cursorIndex, 0);
+
+		try{
+			foreach (Movement.MOVEMENT_NOTATION note in moveNotation) {
+				indexOrder = parseNotation(note, orientation);
+				moveOrder[i] = translateVectorIndexToCoordinate(indexOrder);
+				Debug.Log(moveOrder[i]);
 		}
+		}catch(UnityException e) {
+			//creature attempted to move outside the board boundaries
+		}
+
+
 		return null;
 
 
 	}
 
-	private string parseNotation(Movement.MOVEMENT_NOTATION notation, Monster.MonsterOrientation orientation) {
-		//Orientation is needed to properly adjust the coordinates from an objective board point of view.
-		//using the jagged, multidimensional array, I discovered that orientations rotate by the same difference starting at a different location in the sequence.
-		//Using that offset, we just rotate thru the possible changes to end up on the one we want. Diagonals follow a different pattern,
-		//position 1 tells us which array to use, position 2 tells us where to start rotating
+	//Orientation is needed to properly adjust the coordinates from an objective board point of view.
+	//Using that offset, we just rotate thru the possible changes to end up on the one we want
+	//Initially we start on a part of the array, and then later we offset and rotate thru to the desired direction.
+	//A "vectorIndex" is returned. It's a relative space that is applied to another space to calculate the target coordinate.
+	private int[] parseNotation(Movement.MOVEMENT_NOTATION notation, Monster.MonsterOrientation orientation) {
 		switch (orientation) {
 		case Monster.MonsterOrientation.North:
-			//x = 0;
-			//z = 1;
-			//orientationOffset = 0;
 			orientationOffset = 1;
 			break;
 		case Monster.MonsterOrientation.NorthWest:
-			//x = -1;
-			//z = 1;
-			//orientationOffset = 2;
 			orientationOffset = 6;
 			break;
 		case Monster.MonsterOrientation.NorthEast:
-			//x = 1;
-			//z = 1;
-			//orientationOffset = 4;
 			orientationOffset = 4;
 			break;
 		case Monster.MonsterOrientation.South:
-			//x = 0;
-			//z = -1;
-			//orientationOffset = 5;
 			orientationOffset = 5;
 			break;
 		case Monster.MonsterOrientation.SouthWest:
-			//x = -1;
-			//z = -1;
-			//orientationOffset = 7;
 			orientationOffset = 0;
 			break;
 		case Monster.MonsterOrientation.SouthEast:
-			//x = 1;
-			//z = -1;
-			//orientationOffset = 1;
 			orientationOffset = 2;
 			break;
 		case Monster.MonsterOrientation.West:
-			//x = -1;
-			//z = 0;
-			//orientationOffset = 2;
 			orientationOffset = 3;
 			break;
 		case Monster.MonsterOrientation.East:
-			//x = 1;
-			//z = 0;
-			//orientationOffset = 6;
 			orientationOffset = 7;
 			break;
 		default:
@@ -121,69 +115,46 @@ public class BoardSpace : MonoBehaviour {
 
 		switch (notation) {
 		case Movement.MOVEMENT_NOTATION.H:
+			vectorIndex[0] = 0;
+			vectorIndex[1] = 0;
 			break;
 		case Movement.MOVEMENT_NOTATION.F:
-			targetCoordinateAdjustment[0] = orientationIndex[cycle(orientationOffset,0),0];
-			targetCoordinateAdjustment[1] = orientationIndex[cycle(orientationOffset,0),1];
+			vectorIndex[0] = orientationIndex[cycle(orientationOffset,0),0];
+			vectorIndex[1] = orientationIndex[cycle(orientationOffset,0),1];
 			break;
 		case Movement.MOVEMENT_NOTATION.B:
-			targetCoordinateAdjustment[0] = orientationIndex[cycle(orientationOffset,4),0];
-			targetCoordinateAdjustment[1] = orientationIndex[cycle(orientationOffset,4),1];
+			vectorIndex[0] = orientationIndex[cycle(orientationOffset,4),0];
+			vectorIndex[1] = orientationIndex[cycle(orientationOffset,4),1];
 			break;
 		case Movement.MOVEMENT_NOTATION.FP:
-			targetCoordinateAdjustment[0] = orientationIndex[cycle(orientationOffset,5),0];
-			targetCoordinateAdjustment[1] = orientationIndex[cycle(orientationOffset,5),1];
+			vectorIndex[0] = orientationIndex[cycle(orientationOffset,5),0];
+			vectorIndex[1] = orientationIndex[cycle(orientationOffset,5),1];
 			break;
 		case Movement.MOVEMENT_NOTATION.FS:
-			targetCoordinateAdjustment[0] = orientationIndex[cycle(orientationOffset,3),0];
-			targetCoordinateAdjustment[1] = orientationIndex[cycle(orientationOffset,3),1];
+			vectorIndex[0] = orientationIndex[cycle(orientationOffset,3),0];
+			vectorIndex[1] = orientationIndex[cycle(orientationOffset,3),1];
 			break;
 		case Movement.MOVEMENT_NOTATION.BP:
-			targetCoordinateAdjustment[0] = orientationIndex[cycle(orientationOffset,7),0];
-			targetCoordinateAdjustment[1] = orientationIndex[cycle(orientationOffset,7),1];
+			vectorIndex[0] = orientationIndex[cycle(orientationOffset,7),0];
+			vectorIndex[1] = orientationIndex[cycle(orientationOffset,7),1];
 			break;
 		case Movement.MOVEMENT_NOTATION.BS:
-			targetCoordinateAdjustment[0] = orientationIndex[cycle(orientationOffset,1),0];
-			targetCoordinateAdjustment[1] = orientationIndex[cycle(orientationOffset,1),1];
+			vectorIndex[0] = orientationIndex[cycle(orientationOffset,1),0];
+			vectorIndex[1] = orientationIndex[cycle(orientationOffset,1),1];
 			break;
 		case Movement.MOVEMENT_NOTATION.P:
-			targetCoordinateAdjustment[0] = orientationIndex[cycle(orientationOffset,2),0];
-			targetCoordinateAdjustment[1] = orientationIndex[cycle(orientationOffset,2),1];
+			vectorIndex[0] = orientationIndex[cycle(orientationOffset,2),0];
+			vectorIndex[1] = orientationIndex[cycle(orientationOffset,2),1];
 			break;
 		case Movement.MOVEMENT_NOTATION.S:
-			targetCoordinateAdjustment[0] = orientationIndex[cycle(orientationOffset,6),0];
-			targetCoordinateAdjustment[1] = orientationIndex[cycle(orientationOffset,6),1];
+			vectorIndex[0] = orientationIndex[cycle(orientationOffset,6),0];
+			vectorIndex[1] = orientationIndex[cycle(orientationOffset,6),1];
 			break;
 		}
-		Debug.Log(targetCoordinateAdjustment[0] + ", " + targetCoordinateAdjustment[1]);
-
-		return null;
+		return vectorIndex;
 	}
 
-	//A square has a board coordinate. We can find it by name, but for orientation purposes, some adjustments may be needed to offset the expected space
-	//This determines the objective index declared at the top.
-	private string parseBoardIndex(string notation, bool boardInit) {
-
-		//Home index initialization
-		if (boardInit) {
-			for (int i = 0; i < boardLetters.Length; i++) {
-				if (notation[0].ToString ().Equals (boardLetters [i])) {
-					homeLetterIndex = i;
-					break;
-				}
-			}
-			for (int i = 0; i < boardNumbers.Length; i++) {
-				if (notation[1].ToString ().Equals (boardNumbers [i].ToString ())) {
-					homeNumberIndex = i;
-					break;
-				}
-			}
-		} else {
-
-		}
-		return null;
-	}
-
+	//Used in cycling thru the possible movement differences
 	private int cycle(int startingPos, int cyclePos) {
 		int tempPos = startingPos + cyclePos;
 		if (tempPos > 7) {
@@ -192,4 +163,48 @@ public class BoardSpace : MonoBehaviour {
 			return tempPos;
 		}
 	}
+
+	//It's easier to compare number order and index limitations than letters themselves. The home space is stored as array indexes to look up later.
+	private int[] indexSpace(string startingCoordinate) {
+		int[] indexArray = new int[2];
+
+		for (int i = 0; i < boardLetters.Length; i++) {
+			if (startingCoordinate[0].ToString ().Equals (boardLetters [i])) {
+				indexArray[0] = i;
+				break;
+			}
+		}
+		for (int i = 0; i < boardNumbers.Length; i++) {
+			if (startingCoordinate[1].ToString ().Equals (boardNumbers [i].ToString ())) {
+				indexArray[1] = i;
+				break;
+			}
+		}
+		return indexArray;
+	}
+
+	private int[] findIndexUsingVectorIndex(int[] vectorIndex){
+		return null;
+	}
+
+	//Converts an x and y coordinate into chessboard coordinate system
+	private string translateIndexSpace(int letterIndex, int numberIndex) {
+		string index = "";
+		index += boardLetters [letterIndex] + "" + boardNumbers [numberIndex];
+		return index;
+	}
+
+	private string translateIndexSpace(int[] indexArray) {
+		return translateIndexSpace (indexArray [0], indexArray [1]);
+	}
+
+	//Letter index first, then number index
+	private string translateVectorIndexToCoordinate(int[] vIndex) {
+		cursorIndex [0] = vIndex [0] + cursorIndex [0];
+		cursorIndex [1] = vIndex [1] + cursorIndex [1];
+		return translateIndexSpace(cursorIndex);
+	}
+
+	//TODO Out of bounds check
+
 }
