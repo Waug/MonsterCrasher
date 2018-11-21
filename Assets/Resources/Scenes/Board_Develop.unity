@@ -4512,7 +4512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SQUARETEST: 0
+  SQUARETEST: 1
   NOTATIONTEST: 1
   ORITEST: 0
   SpaceType: 0
@@ -6431,7 +6431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba9a6e91c058414c906f595129a5a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SQUARETEST: 0
+  SQUARETEST: 1
   NOTATIONTEST: 0
   ORITEST: 0
   SpaceType: 0
